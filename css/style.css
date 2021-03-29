@@ -21,6 +21,7 @@ body{
   
     
 }
+
 a{ 
     text-decoration: none;
     color: black;
@@ -38,7 +39,6 @@ a{
     padding-top: 10px;
 }
 
-
 .header{
     display: flex;
     flex-wrap: wrap;
@@ -48,8 +48,6 @@ a{
     text-decoration: underline;
 
 }
-
-
 
 .flag_ru{
     background-color: white;
@@ -589,7 +587,6 @@ footer{
     margin-left: 10px;
 }
 
-
 .footer_grid_card{
     background-color:#222222;
     max-width: 1200px;
@@ -597,15 +594,154 @@ footer{
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    text-decoration: none;  
     margin-top: 50px;
+}
+
+.footer_grid_card a{  /*указал а после сласса для отмены наследования цвета шрифта*/
+    color:white; 
+}
+
+.footer_grid_card_1{
+    margin-right: 30px;
+}
+
+.footer_grid_card_2{
+    margin-right: 30px;
+}
+
+.footer_grid_card_3{
+    margin-right: 30px;
+}
+
+.footer_grid_title1{
+    margin-bottom:20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer_grid_title2{
+    margin-bottom:20px;
+}
+
+.footer_grid_title3{
+    margin-bottom:7px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer_grid_title4{
+    margin-bottom:20px;
+}
+
+.footer_grid_title5{
+    margin-bottom:20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer_grid_title6{
+    margin-bottom:15px;
+}
+
+.footer_grid_title7{
+    margin-bottom:15px;
+}
+
+.footer_grid_title8{
+    margin-bottom:15px;
+}
+
+.footer_grid_title9{
+    margin-bottom:15px;
+}
+
+.footer_grid_title11{
+    margin-bottom:20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer_grid_title22{
+    margin-bottom:25px;
+}
+
+.footer_grid_title33{
+    margin-bottom:15px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer_grid_title111{
+    margin-bottom:20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer_grid_title222{
+    margin-bottom:15px;
+}
+
+.footer_grid_title333{
+    margin-bottom:15px;
+}
+
+.footer_grid_title555{
+    margin-bottom:15px;
+}
+
+.footer_grid_title666{
+    margin-bottom:15px;
+}
+
+.footer_grid_title777{
+    margin-bottom:15px;
+}
+
+.footer_grid_title888{
+    margin-bottom:15px;
+}
+
+.footer_grid_title999{
+    margin-bottom:15px;
+}
+
+.footer_grid_title1111{
+    margin-bottom:20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer_grid_title2222{
+    margin-bottom:15px;
+}
+
+.footer_grid_title3333{
+    margin-bottom:15px;
+}
+
+.footer_grid_title4444{
+    margin-bottom:15px;
+}
+
+.footer_grid_title5555{
+    margin-bottom:15px;
+}
+
+.footer_grid_title6666{
+    margin-bottom:15px;
+}
+
+.footer_grid_title7777{
+    margin-bottom:15px;
+}
+
+.footer_grid_title8888{
+    margin-bottom:15px;
 }
 
 .footer_title{
     background-color: #222222;
     color: white;
+    margin-top: 30px;
+    font-size: 13px;
 }
-
-
-
-
