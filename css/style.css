@@ -42,6 +42,10 @@ a{
 .header{
     display: flex;
     flex-wrap: wrap;
+    position: sticky;  /*делает прилипание строки навигации после прокручивания*/
+    top:0;
+    left:0;
+    background-color: white;
 }
 
 .start_shoping{
@@ -53,9 +57,6 @@ a{
     background-color: white;
     border:0px;
 }
-
-
-
 
 .header_navfor1{
     display: flex;
@@ -104,13 +105,18 @@ a{
     text-decoration: none;
 }
 
+/* кнопка поиска*/
 
+.search1 {
+    background: #ffffff;
+    margin-bottom: 10px;
+}
 
-.search1 {background: #ffffff;}
 .search1 input, .search1 button {
   outline: none;
   background: transparent;
 }
+
 .search1 input {
   width: 90%;
   height: 42px;
@@ -118,6 +124,7 @@ a{
   border: 1px solid rgb(184, 183, 183);
   border-radius: 5px;
 }
+
 .search1 button {
   border: none;
   height: 42px;
@@ -133,8 +140,6 @@ a{
 }
 
 /* main styles*/
-
-
 
 .mainimg1{
     margin-top: 50px;
