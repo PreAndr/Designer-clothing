@@ -3,9 +3,7 @@
 
 html{
     box-sizing:border-box;
-    
 }
-
 
 body{
     width: 100%;
@@ -18,16 +16,16 @@ body{
     line-height: 1.2;
     font-weight: normal;
     color: #070707;
-  
-    
+} 
+
+img {
+    max-width: 100%;  /*для адаптивности изображений*/
 }
 
 a{ 
     text-decoration: none;
     color: black;
 }
-
-
 
 .header_top_container{
     background: #ddd;
@@ -46,6 +44,10 @@ a{
     top:0;
     left:0;
     background-color: white;
+}
+
+.header_mobail{
+    display: none;
 }
 
 .start_shoping{
@@ -212,6 +214,11 @@ a{
 
 .novinki_card:last-child{
     margin-right: 0;
+}
+
+.novinki_card_kedy{
+    width: 172.5px;
+    height: 230px;
 }
 
 .novinki_title1{
@@ -404,6 +411,8 @@ a{
 
 .new_collection_card{
     position: center;
+    max-width: 100%;
+    max-height: 100%;
     margin-right: 18px;
 }
 
@@ -750,3 +759,679 @@ footer{
     margin-top: 30px;
     font-size: 13px;
 }
+
+@media screen and (max-width:767px){
+  
+    
+/*header styles*/
+
+html{
+    box-sizing:border-box;
+}
+
+.header{
+    display:none;
+}
+
+.footer{
+    display: none;
+}
+
+body{
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    position: relative;  /* ОЧЕНЬ ВАЖНО! для того чтоб не разьезжалось*/
+    font-family: 'Arial';
+    font-style: normal;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #070707;
+} 
+
+img {
+    max-width: 100%;  /*для адаптивности изображений*/
+}
+
+a{ 
+    text-decoration: none;
+    color: black;
+}
+
+.header_top_container{
+    background: #ddd;
+    height: 30px;
+    }
+
+.best_new{
+    text-align: center;
+    padding-top: 7px;
+}
+
+.header_mobail{
+    max-width: 375px;
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;  /*делает прилипание строки навигации после прокручивания*/
+    top:0;
+    left:0;
+    background-color: white;
+    z-index: 1;
+}
+
+.start_shoping{
+    text-decoration: underline;
+
+}
+
+.header_navfor1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:space-between;
+    width: 375px;
+    max-width: 375px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+        
+}
+
+.header_navlogo1{
+    margin-left:130px;
+    font-size: 20px;
+    font-weight:900;
+    width: 50px;
+}
+
+.header_navicon{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.header_navicon2{
+    margin-left: 110px;
+}
+
+.header_navicon3{
+    margin-right: 0px;
+}
+
+/* main styles*/
+main{
+    max-width: 375px;
+}
+
+.mainimg1{
+    position: relative;
+    overflow: hidden;
+    width: 351px;
+    height: 400px;
+    margin-top: 10px;
+    margin-left:10px;    
+}
+.mainimg1 img{
+    position:absolute;
+    width: 351px;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+.title_clock{
+    text-align: left;
+    padding-top: 13px;
+    font-size: 25px;
+    max-width: 300px;
+    margin-left: 10px;
+    font-stretch:condensed;
+    font-weight:bold;
+}
+
+.title_clock_text{
+    text-align: left;
+    padding-top: 15px;
+    font-size: 15px;
+    max-width: 351px;
+    margin-left: 10px;
+}
+
+.mainimg2{
+    margin-top: 70px;
+    width: 351px;
+    height: 350px;
+    margin-left: 10px;
+    object-fit: cover;
+}
+
+.title_soob{
+    text-align:left;
+    padding-top: 15px;
+    font-size: 15px;
+    max-width: 351px;
+    font-stretch:condensed;
+    font-weight:bold;
+    margin-left: 10px;
+}
+
+.title_soob_text{
+    text-align: left;
+    padding-top: 15px;
+    font-size: 15px;
+    max-width: 351px;
+    margin-left: 10px;
+}
+
+.text_novinki{
+    text-align: left;
+    padding-top: 30px;
+    font-size: 30px;
+    max-width: 351px;
+    font-weight:bold;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.novinki_cards{
+    max-width: 375px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10px;
+}
+
+.novinki_card{
+    position: center;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    object-fit: cover;
+}
+
+.novinki_title1{
+    text-align: center;
+    color: #727272;
+    
+}
+
+.novinki_title2{
+    text-align: center;
+    font-weight:bold;
+    margin-top: 10px;
+    
+}
+
+.novinki_title3{
+    text-align: center;
+    
+}
+
+.novinki_title4{
+    text-decoration:none;
+    text-align: center;
+    margin-top: 5px;
+    
+}
+
+.button_start_shopping{
+    margin-left: 70px;   
+    margin-top: 10px;
+    padding: 15px 60px;
+    background-color: white;
+    border-radius: 4px;
+    border-color: black;
+    color: black;
+}
+
+.button_start_shopping:hover{
+    color: rgb(0, 0, 0);
+}
+
+.button_start_shopping:active{
+    color:rgb(102, 101, 101);
+}
+
+
+.text_gid{
+    text-align: left;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.text2_gid{
+    text-align: left;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-top: 6px;
+}
+
+
+.gid_img{
+    position: relative;
+    overflow: hidden;
+    width: 351px;
+    height: 400px;
+    margin-top: 10px;
+    margin-left:10px;    
+}
+.gid_img img{
+    position:absolute;
+    width: 351px;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+.text_week_main{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 30px;
+    margin-left: 10px;
+    font-weight:bold;
+    margin-bottom: 40px;
+}
+
+.week_main_cards{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-decoration: none;   
+}
+
+.week_main_card{
+    position:center;
+    margin-left:70px;
+    margin-right: 70px;
+    margin-bottom: 40px;
+
+}
+.week_main_card:last-child {
+    margin-right: 70px;
+}
+
+.week_main_title1{
+    text-align: left;
+    text-decoration: none;
+    font-weight:bold;
+    margin-top: 15px;
+}
+
+.week_main_title2{
+    text-align: left;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.text_novinki_black{
+    text-align: left;
+    padding-top: 30px;
+    font-size: 26px;
+    max-width: 351px;
+    font-weight:bold;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.novinki_black_cards{
+    max-width: 375px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10px;  
+}
+
+.novinki_black_card{
+    position: center;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.novinki_black_title1{
+    text-align: center;
+    color: #727272;
+}
+
+.novinki_black_title2{
+    text-align: center;
+    font-weight:bold;
+    margin-top: 10px;
+}
+
+.novinki_black_title3{
+    text-align: center;
+
+}
+
+.novinki_black_title4{
+    text-decoration:none;
+    text-align: center;
+    margin-top: 5px;
+    
+}
+
+
+.button_bolshe{
+    margin-left: 70px;   
+    margin-top: 10px;
+    padding: 15px 60px;
+    background-color: white;
+    border-radius: 4px;
+    border-color: black;
+    color: black;
+}
+
+.button_bolshe:hover{
+    color: rgb(0, 0, 0);
+}
+
+.button_bolshe:active{
+    color:rgb(102, 101, 101);
+}
+
+
+.new_collection{
+    margin-top: 40px;
+}
+
+
+.new_collection_cards{
+    max-width: 375px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-decoration: none;   
+}
+
+.new_collection_card{
+    position: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 40px;
+}
+
+.new_collection_card:last-child{
+    margin-bottom: 0;
+}
+
+.new_collection_title1{
+    text-align: left;
+    color: #000000;
+    text-decoration: none;
+    
+}
+
+.new_collection_title1{
+    text-align: left;
+    font-weight:bold;
+    margin-top: 15px;
+    text-decoration: none;
+    color: black;
+}
+.new_collection_title2{
+    text-align: left;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    max-width: 355px;
+}
+
+
+.text_vybor_butika{
+    text-align: left;
+    padding-top: 40px;
+    font-size: 26px;
+    max-width: 351px;
+    font-weight:bold;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.vybor_butika_cards{
+    max-width: 375px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10px;
+       
+}
+
+.vybor_butika_card{
+    position: center;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+
+.vybor_butika_title1{
+    text-align: center;
+    color: #727272;
+}
+
+.vybor_butika_title2{
+    text-align: center;
+    font-weight:bold;
+    margin-top: 10px;
+}
+
+.vybor_butika_title3{
+    text-align: center;
+}
+
+.vybor_butika_title4{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.button_bolshe{
+    margin-left: 70px;   
+    margin-top: 10px;
+    padding: 15px 60px;
+    background-color: white;
+    border-radius: 4px;
+    border-color: black;
+    color: black;
+}
+
+.button_bolshe:hover{
+    color: rgb(0, 0, 0);
+}
+
+.button_bolshe:active{
+    color:rgb(102, 101, 101);
+}
+
+.bottom_container_titles{
+    max-width: 375px;
+    height: 50px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(134, 134, 134);
+    text-align: center;
+    margin-top: 50px;
+    position: center;
+    
+
+}
+
+.bottom_container_title1{
+    text-align: center;
+    margin-top: 17px;
+    color: white;
+}
+.bottom_container_title2{
+    text-align: center;
+    margin-top: 17px;
+    color: white;
+}
+.bottom_container_title3{
+    text-align: center;
+    margin-top: 17px;
+    color: white;
+}
+
+.bottom_container2{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.bottom_container2_title1{
+    margin-top: 30px;
+    margin-left: ;
+    max-width: 375px;
+    text-align: center;
+    font-size: 17px;
+    color:#222222;
+}
+
+.bottom_container2_title2{
+    margin-top: 15px;
+    margin-left:0;
+    max-width: 375px;
+    text-align: center;
+    color:#222222;
+}
+
+.bottom_button{
+    margin-left: 150px;
+    margin-top: 30px;
+    text-align: center;
+    color:#222222;
+    max-width: 70px;
+}
+
+.button_bolshe2{
+    margin-left:10px;
+    margin-top: 8px;
+    padding: 15px 110px;
+    background-color:#222222;
+    border-radius: 4px;
+    border-color:#222222;
+    color: rgb(255, 255, 255);          
+}
+
+.email {
+    background: #ffffff;
+    
+}
+
+.email input {
+    width: 295px;
+    height: 42px;
+    border: 1px solid rgb(184, 183, 183);
+    border-radius: 5px;
+    margin-left: 40px; 
+    margin-top: 30px;
+}
+
+.email input:focus {
+  border-color: #311c24
+}
+
+.button_bolshe2:hover{
+    color: rgb(255, 255, 255);
+}
+
+.button_bolshe2:active{
+    color:rgb(160, 160, 160);
+}
+
+.podpiska{
+    margin-left: 30px;
+
+}
+.podpiska_title{
+    text-align: center;
+    max-width: 300px;
+    margin-left:40px;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: #222222;
+    text-decoration: 2px solid #222222;
+}
+
+.footer_mobail{
+    background-color: #222222;
+    padding-left: ;
+    padding-right: ;
+    padding-top: 0.05px;
+    padding-bottom: 0.05px;
+        
+}
+
+.footer_grid_cards{
+    color: white;
+    margin-left: 10px;
+}
+
+.footer_grid_card{
+    background-color:#222222;
+    max-width: 1200px;
+    white;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 20px;
+}
+
+.footer_grid_card a{  /*указал а после сласса для отмены наследования цвета шрифта*/
+    color:white; 
+}
+
+
+.footer_grid_title1{
+    margin-bottom:20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+.footer_grid_title3{
+    margin-bottom:20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer_grid_title5{
+    margin-bottom:20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer_grid_title11{
+    margin-bottom:20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer_grid_title33{
+    margin-bottom:20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer_grid_title111{
+    margin-bottom:20px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+
+.footer_grid_title1111{
+    margin-bottom:50px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.footer_title{
+    background-color: #222222;
+    color: white;
+    margin-top: 30px;
+    font-size: 13px;
+    max-width: 351px;
+    margin-left: 10px;
+}
+
+}  
